@@ -8,6 +8,7 @@ script:
   - cp docker/env.example docker/env
   - cp docker-compose.yml.example docker-compose.yml
   - cp pypolo/local_settings.py.example pypolo/local_settings.py
+  - echo yow
   - sed -i 's/POLONIEX_API_KEY=/POLONIEX_API_KEY=dummy/' docker/env
   - sed -i 's/POLONIEX_API_SECRET=/POLONIEX_API_SECRET=dummy/' docker/env
   - docker-compose build
