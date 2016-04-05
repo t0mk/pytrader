@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-language: python
+language: ruby
 
 script:
   - cp docker/env.example docker/env
