@@ -11,7 +11,7 @@ script:
   - echo yow
   - sed -i 's/POLONIEX_API_KEY=/POLONIEX_API_KEY=dummy/' docker/env
   - sed -i 's/POLONIEX_API_SECRET=/POLONIEX_API_SECRET=dummy/' docker/env
-  - docker-compose build
-  - docker-compose up -d
+  - docker build -t t0mk/pytrader-dev ./
+  - docker --version
+  - docker-compose --version
   - sleep 10
-
